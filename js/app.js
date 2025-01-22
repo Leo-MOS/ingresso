@@ -12,7 +12,8 @@ function comprar() {
     // Obter quantidade inserida
     let qtdIngresso = parseInt(document.getElementById("qtd").value);
     if (!validarQuantidade(qtdIngresso)) {
-        console.log(`Resultado da validação: ${validarQuantidade(qtdIngresso)}.`);
+        //console.log(`Resultado da validação: ${validarQuantidade(qtdIngresso)}.`);
+        //Se entrar é porque a quantidade inserida é inválida. Não foi inserido nenhum alerta porque a própria função de validação faz os alertas.
         return;
     }
     console.log(`Quantidade solicitada: ${qtdIngresso}.`);
